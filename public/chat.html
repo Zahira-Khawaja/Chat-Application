@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos-Solution</title>
+    <!-- materialize link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- materialize script -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- connecting script file -->
+    <script src="./js/index.js" defer></script>
+    <!-- fontawesome script -->
+    <script defer src="https://kit.fontawesome.com/4ed1220c87.js" crossorigin="anonymous"></script>
+    <!-- socket io -->
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+
+    <div class="big-box-container" id="display-container">
+        <!-- <div class="message-wrapper #f44336 red positionRight">
+            <p id="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, id?</p>
+        </div>
+        <div class="message-wrapper #f44336 red positionLeft">
+            <p id="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, id?</p>
+        </div> -->
+    </div>
+
+    <form >
+        <div class="input-field" style="width: 70%; margin: 1rem auto;">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">message</label>
+            <button  id="send" class="waves-effect #f44336 red btn positionLeft">Send</button>
+        </div>
+    </form>
+
+    <a class="waves-effect #f44336 red btn" style="width:20%; position: absolute; bottom:20px; right: 20px; "
+        href="/logout">logout</a>
+</body>
+
+</html>

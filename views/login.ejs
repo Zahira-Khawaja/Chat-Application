@@ -1,0 +1,27 @@
+<%- include('./partials/header') %>
+
+    <main class="#ffebee red lighten-5">
+        <div class="big-container">
+            <div class="row">
+                <form class="col s12" action="/login" method="POST">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" name="username" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="text" name="password"class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="waves-effect waves-light btn #ff5252 red accent-2">Login</button>
+                    <a role="button" href="/auth/google"class="waves-effect waves-light btn #ff5252 red accent-2"><i
+                            class="fa fa-brands fa-google"></i> Login with google</a>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <%- include('./partials/footer') %>
